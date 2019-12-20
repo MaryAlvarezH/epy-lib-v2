@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "epy": {
+      "projectType": "library",
+      "root": "projects/epy",
+      "sourceRoot": "projects/epy/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/epy/tsconfig.lib.json",
+            "project": "projects/epy/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/epy/src/test.ts",
+            "tsConfig": "projects/epy/tsconfig.spec.json",
+            "karmaConfig": "projects/epy/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/epy/tsconfig.lib.json",
+              "projects/epy/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "epy-lib2"
 }
