@@ -1,0 +1,11 @@
+<!-- input usa <lib-button></lib-button> -->
+<div [ngClass]="type === 'input-line' ? 'input-line-field' : 'input-field'">
+  <p>
+    {{ field }} <span>{{ legend }}</span>
+  </p>
+  <input
+    [(ngModel)]="value"
+    (ngModelChange)="onChange()"
+    [placeholder]="placeholder ? placeholder : ''"
+  />
+</div>

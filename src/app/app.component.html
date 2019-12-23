@@ -1,1 +1,32 @@
-<lib-button></lib-button> <lib-select></lib-select>
+<lib-button
+  [text]="'Im a red class'"
+  [type]="'red'"
+  (onButtonClick)="onButtonClick($event)"
+></lib-button>
+
+<lib-input></lib-input>
+<lib-select
+  [items]="[
+    'Maximaze Revenue',
+    'Maximaze Clicks',
+    'Maximaze Conversions',
+    'Maximaze Impressions',
+    'Maximaze Profit'
+  ]"
+></lib-select>
+
+<lib-select
+  style="width:300px"
+  [items]="[
+    'Maximaze Revenue',
+    'Maximaze Clicks',
+    'Maximaze Conversions',
+    'Maximaze Impressions',
+    'Maximaze Profit'
+  ]"
+  [field]="'Whats your goal?'"
+  [legend]="'(in which your campaign will run)'"
+  [placeholder]="'Select strategy'"
+  [selectedValue]="'Maximaze Clicks'"
+  [filter]="true"
+></lib-select>

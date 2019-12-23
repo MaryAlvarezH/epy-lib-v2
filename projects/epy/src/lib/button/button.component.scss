@@ -1,0 +1,44 @@
+@import "../base.scss";
+
+@mixin btn($color, $outline: true) {
+  height: inherit;
+  width: inherit;
+  min-height: 35px;
+  min-width: 180px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: $base-font;
+
+  @if $outline {
+    border: 1px solid $color;
+    background-color: transparent;
+    color: $color;
+  } @else {
+    background-color: $color;
+    border: none;
+    color: $white;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.green {
+  @include btn($green-epy, false);
+}
+.green-outline {
+  @include btn($green-epy, true);
+}
+.red {
+  @include btn($dark-red, false);
+}
+.red-outline {
+  @include btn($dark-red, true);
+}
+.gray {
+  @include btn($smoke-gray, false);
+}
+.gray-outline {
+  @include btn($smoke-gray, true);
+}

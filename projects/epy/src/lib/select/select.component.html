@@ -1,1 +1,33 @@
-Select!! usa <lib-button></lib-button>
+<!-- select usa <lib-button></lib-button> -->
+<div class="select-field">
+  <p>
+    {{ field }} <span>{{ legend }}</span>
+  </p>
+  <div class="custom-select">
+    <div class="custom-select-wrapper" (click)="state = !state">
+      <div class="custom-select" [ngClass]="{ open: state }">
+        <div class="custom-select__trigger">
+          <div class="custom-select-value">
+            <span *ngIf="selectedValue">{{ selectedValue }}</span>
+            <span *ngIf="placeholder && !selectedValue">{{ placeholder }}</span>
+          </div>
+          <div class="arrow" [ngClass]="{ 'arrow-open': state }"></div>
+        </div>
+        <div class="custom-options">
+          <div *ngIf="filter" class="filter-wrapper">
+            <lib-input></lib-input>
+            <!-- <input type="text" /> -->
+          </div>
+
+          <span
+            class="custom-option"
+            [ngClass]="{ selected: item === selectedValue }"
+            *ngFor="let item of items"
+            (click)="onChange(item)"
+            >{{ item }}</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
