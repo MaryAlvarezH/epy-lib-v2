@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
-  selector: "lib-input",
+  selector: "epy-input",
   templateUrl: "./input.component.html",
   styleUrls: ["./input.component.scss"]
 })

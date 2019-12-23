@@ -15,7 +15,7 @@ storiesOf("Select", module)
   )
   .add("default", () => {
     return {
-      template: `<lib-select [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']"></lib-select>`,
+      template: `<epy-select [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']"></epy-select>`,
       props: {
         onSelectChange: actions.onSelectChange
       }
@@ -23,7 +23,7 @@ storiesOf("Select", module)
   })
   .add("default (field legend)", () => {
     return {
-      template: `<lib-select [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']" [field]="'Whats your goal?'" [legend]="'(in which your campaign will run)'"></lib-select>`,
+      template: `<epy-select [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']" [field]="'Whats your goal?'" [legend]="'(in which your campaign will run)'"></epy-select>`,
       props: {
         onSelectChange: actions.onSelectChange
       }
@@ -31,7 +31,7 @@ storiesOf("Select", module)
   })
   .add("default (placeholder)", () => {
     return {
-      template: `<lib-select [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']" [field]="'Whats your goal?'" [legend]="'(in which your campaign will run)'" [placeholder]="'Select strategy'"></lib-select>`,
+      template: `<epy-select [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']" [field]="'Whats your goal?'" [legend]="'(in which your campaign will run)'" [placeholder]="'Select strategy'"></epy-select>`,
       props: {
         onSelectChange: actions.onSelectChange
       }
@@ -39,7 +39,7 @@ storiesOf("Select", module)
   })
   .add("default (selectedValue)", () => {
     return {
-      template: `<lib-select style="width:300px" [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']" [field]="'Whats your goal?'" [legend]="'(in which your campaign will run)'" [placeholder]="'Select strategy'" [selectedValue]="'Maximaze Clicks'"></lib-select>`,
+      template: `<epy-select style="width:300px" [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']" [field]="'Whats your goal?'" [legend]="'(in which your campaign will run)'" [placeholder]="'Select strategy'" [selectedValue]="'Maximaze Clicks'"></epy-select>`,
       props: {
         onSelectChange: actions.onSelectChange
       }
@@ -47,7 +47,7 @@ storiesOf("Select", module)
   })
   .add("default (filter)", () => {
     return {
-      template: `<lib-select style="width:300px" [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']" [field]="'Whats your goal?'" [legend]="'(in which your campaign will run)'" [placeholder]="'Select strategy'" [selectedValue]="'Maximaze Clicks'" [filter]="true"></lib-select>`,
+      template: `<epy-select style="width:300px" [items]="['Maximaze Revenue','Maximaze Clicks', 'Maximaze Conversions','Maximaze Impressions', 'Maximaze Profit']" [field]="'Whats your goal?'" [legend]="'(in which your campaign will run)'" [placeholder]="'Select strategy'" [selectedValue]="'Maximaze Clicks'" [filter]="true"></epy-select>`,
       props: {
         onSelectChange: actions.onSelectChange
       }

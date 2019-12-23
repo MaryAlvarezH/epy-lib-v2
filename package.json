@@ -1,5 +1,5 @@
 {
-  "name": "epy-lib2",
+  "name": "epy-lib",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,7 +11,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "pack-epy": "cd dist/epy && npm pack",
-    "publish-epy": "npm publish ./dist/epy/epy-0.0.8.tgz"
+    "publish-epy": "npm publish ./dist/epy/epy-0.0.9.tgz"
   },
   "private": true,
   "dependencies": {

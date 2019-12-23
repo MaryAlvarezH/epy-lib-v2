@@ -13,7 +13,7 @@ storiesOf("Input", module)
   )
   .add("default", () => {
     return {
-      template: `<lib-input></lib-input>`,
+      template: `<epy-input></epy-input>`,
       props: {
         onInputChange: actions.onInputChange
       }
@@ -21,7 +21,7 @@ storiesOf("Input", module)
   })
   .add("default (field)", () => {
     return {
-      template: `<lib-input [field]="'Campaign Name'"></lib-input>`,
+      template: `<epy-input [field]="'Campaign Name'"></epy-input>`,
       props: {
         onInputChange: actions.onInputChange
       }
@@ -29,7 +29,7 @@ storiesOf("Input", module)
   })
   .add("default (field legend)", () => {
     return {
-      template: `<lib-input [field]="'Campaign Name'" [legend]="'(something you’ll remember it with)'"></lib-input>`,
+      template: `<epy-input [field]="'Campaign Name'" [legend]="'(something you’ll remember it with)'"></epy-input>`,
       props: {
         onInputChange: actions.onInputChange
       }
@@ -37,7 +37,7 @@ storiesOf("Input", module)
   })
   .add("default (field legend placeholder)", () => {
     return {
-      template: `<lib-input [field]="'Campaign Name'" [legend]="'(something you’ll remember it with)'" [placeholder]="'Doto.com.mx Shopping Campaign'"></lib-input>`,
+      template: `<epy-input [field]="'Campaign Name'" [legend]="'(something you’ll remember it with)'" [placeholder]="'Doto.com.mx Shopping Campaign'"></epy-input>`,
       props: {
         onInputChange: actions.onInputChange
       }
@@ -45,7 +45,7 @@ storiesOf("Input", module)
   })
   .add("line", () => {
     return {
-      template: `<lib-input [type]="'input-line'"></lib-input>`,
+      template: `<epy-input [type]="'input-line'"></epy-input>`,
       props: {
         onInputChange: actions.onInputChange
       }
@@ -53,7 +53,7 @@ storiesOf("Input", module)
   })
   .add("line (field)", () => {
     return {
-      template: `<lib-input [field]="'Nombre'" [type]="'input-line'" ></lib-input>`,
+      template: `<epy-input [field]="'Nombre'" [type]="'input-line'" ></epy-input>`,
       props: {
         onInputChange: actions.onInputChange
       }
@@ -61,7 +61,7 @@ storiesOf("Input", module)
   })
   .add("line (field legend)", () => {
     return {
-      template: `<lib-input [field]="'Campaign Name'" [legend]="'(something you’ll remember it with)'" [type]="'input-line'"></lib-input>`,
+      template: `<epy-input [field]="'Campaign Name'" [legend]="'(something you’ll remember it with)'" [type]="'input-line'"></epy-input>`,
       props: {
         onInputChange: actions.onInputChange
       }
@@ -69,7 +69,7 @@ storiesOf("Input", module)
   })
   .add("line (field legend placeholder)", () => {
     return {
-      template: `<lib-input [field]="'Campaign Name'" [legend]="'(something you’ll remember it with)'" [placeholder]="'Doto.com.mx Shopping Campaign'" [type]="'input-line'"></lib-input>`,
+      template: `<epy-input [field]="'Campaign Name'" [legend]="'(something you’ll remember it with)'" [placeholder]="'Doto.com.mx Shopping Campaign'" [type]="'input-line'"></epy-input>`,
       props: {
         onInputChange: actions.onInputChange
       }

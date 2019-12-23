@@ -13,7 +13,7 @@ storiesOf("Button", module)
   )
   .add("red", () => {
     return {
-      template: `<lib-button [text]="'Im a red class'" [type]="'red'" (onButtonClick)="onButtonClick($event)"></lib-button>`,
+      template: `<epy-button [text]="'Im a red class'" [type]="'red'" (onButtonClick)="onButtonClick($event)"></epy-button>`,
       props: {
         onButtonClick: actions.onButtonClick
       }

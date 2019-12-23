@@ -1,11 +1,11 @@
-<lib-button
+<epy-button
   [text]="'Im a red class'"
   [type]="'red'"
   (onButtonClick)="onButtonClick($event)"
-></lib-button>
+></epy-button>
 
-<lib-input></lib-input>
-<lib-select
+<epy-input></epy-input>
+<epy-select
   [items]="[
     'Maximaze Revenue',
     'Maximaze Clicks',
@@ -13,9 +13,9 @@
     'Maximaze Impressions',
     'Maximaze Profit'
   ]"
-></lib-select>
+></epy-select>
 
-<lib-select
+<epy-select
   style="width:300px"
   [items]="[
     'Maximaze Revenue',
@@ -29,4 +29,4 @@
   [placeholder]="'Select strategy'"
   [selectedValue]="'Maximaze Clicks'"
   [filter]="true"
-></lib-select>
+></epy-select>
